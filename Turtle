@@ -1,5 +1,6 @@
 print("ENGR 102 - Indie Lab #1 Team 2")
-print("Team members: Alyssa Hinkel, Brisania Andrade, Gabe Rose, Vincent Marston") 
+print("Team members: Alyssa Hinkel, Brisania Andrade, Gabe Rose, Vincent Marston")
+print("Aggie Honor Code: An Aggie does not lie, cheat, steal, or tolerate those who do.")
 print("Lessons from a Triangle")
 
 numSides = int(input("How many sides should the polygon have? Sides should range from 3 - 20:")) #gathers the number of sides the user wants for the polygon
