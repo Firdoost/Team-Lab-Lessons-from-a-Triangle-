@@ -1,0 +1,16 @@
+import turtle
+wn = turtle.Screen()
+bob = turtle.Turtle()
+
+import math
+leg_1= 60
+leg_2= 80 
+hypotenuse= math.sqrt((leg_1**2)+(leg_2**2))
+hypotenuse_int=int(hypotenuse)                     
+sides= [leg_1, hypotenuse_int, leg_2]
+angles= [125,145,0]
+
+for i in range(3):
+    bob.forward(sides[i])
+    bob.left(angles[i])
+       
