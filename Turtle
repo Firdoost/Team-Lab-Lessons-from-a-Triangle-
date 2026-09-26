@@ -39,7 +39,7 @@ for i in range(6):
   bob.left(60)
 
 bob.penup()
-bob.goto(150, 250)
+bob.goto(10, -10)
 bob.pendown()
 
 #polygon
