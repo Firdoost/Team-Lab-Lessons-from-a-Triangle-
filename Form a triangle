@@ -13,4 +13,4 @@ angles= [125,145,0]
 for i in range(3):
     bob.forward(sides[i])
     bob.left(angles[i])
-       
+wn.exitonclick()       
