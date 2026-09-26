@@ -30,7 +30,16 @@ for i in range(4):
     bob.left(90)
 
 bob.penup()
-bob.goto(50, 375)
+bob.goto(50, 250)
+bob.pendown()
+
+#hexagon
+for i in range(6):
+  bob.forward(60)
+  bob.left(60)
+
+bob.penup()
+bob.goto(150, 250)
 bob.pendown()
 
 #polygon
