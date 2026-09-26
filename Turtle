@@ -1,4 +1,4 @@
-numSides = int(input("How many sides should the polygon have?"))
+numSides = int(input("How many sides should the polygon have? Sides should range from 3 - 20:"))
 import turtle
 wn = turtle.Screen()
 bob = turtle.Turtle()
@@ -26,7 +26,7 @@ for i in range(4):
     bob.left(90)
 
 bob.penup()
-bob.goto(200, 150)
+bob.goto(50, 375)
 bob.pendown()
 
 #polygon
