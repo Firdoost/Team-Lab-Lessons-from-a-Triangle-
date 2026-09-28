@@ -1,1 +1,54 @@
+print("ENGR 102 - Indie Lab #1 Team 2")
+print("Team members: Alyssa Hinkel, Brisania Andrade, Gabe Rose, Vincent Marston")
+print("Aggie Honor Code: An Aggie does not lie, cheat, steal, or tolerate those who do.")
+print("Lessons from a Triangle")
 
+numSides = int(input("How many sides should the polygon have? Sides should range from 3 - 20:")) #gathers the number of sides the user wants for the polygon
+import turtle
+wn = turtle.Screen()
+bob = turtle.Turtle()
+
+import math
+leg_1 = 60
+leg_2 = 80
+hypotenuse = math.sqrt((leg_1**2) + (leg_2**2))
+hypotenuse_int = int(hypotenuse)
+sides = [leg_1, hypotenuse_int, leg_2]
+angles = [126.87, 143.13, 90]
+
+#triangle
+for i in range(3):
+    bob.forward(sides[i])
+    bob.left(angles[i])
+
+bob.penup()
+bob.goto(150, 0)
+bob.pendown()
+
+#square
+for i in range(4):
+    bob.forward(60)
+    bob.left(90)
+
+bob.penup()
+bob.goto(50, 250)
+bob.pendown()
+
+#hexagon
+for i in range(6):
+  bob.forward(60)
+  bob.left(60)
+
+bob.penup()
+bob.goto(-50, -15)
+bob.pendown()
+
+#polygon
+def drawPolygon(bob, sideLength, numSides):
+    angle = 360 / numSides
+    for i in range(numSides):
+        bob.forward(sideLength)
+        bob.right(angle)
+
+drawPolygon(bob, 30, numSides)
+wn.exitonclick()
